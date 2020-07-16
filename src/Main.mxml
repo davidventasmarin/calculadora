@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark">
+    <!-- <fx:Script><![CDATA[
+        //import mx.controls.Alert;
+
+        ]]></fx:Script> -->
+        <fx:Script>
+            import mx.controls.Alert;
+
+            import org.flexunit.asserts.assertEquals;
+
+            public function CalculadoraTest(): void {
+                Alert.show("Hello world");
+
+            }
+
+            public function MainTest() {
+                assertEquals(CalculadoraTest, "Hello wor");
+            }
+
+
+        </fx:Script>
+
+    <s:Button click="CalculadoraTest()" label="Say Hello"/>
+</s:Application>
